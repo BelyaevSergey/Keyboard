@@ -1,0 +1,83 @@
+.wrapper {
+    display: flex;
+    border: 2px solid rgb(238, 144, 37);
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 900px;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 6%;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+}
+.wrapperRu {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: left;
+    text-align: center;
+    padding-bottom: 15px;
+
+  
+}
+
+.key {
+
+    width: 50px;
+    height: 35px;
+    border: 1px solid rgb(247, 192, 55);
+    margin: 4px;
+    padding-top: 15px;
+    position: relative;
+    border-radius: 10%;
+    box-shadow:0px 3px 3px 3px rgb(255, 106, 46);
+}
+.textArea{
+    border:none;
+    resize: none;
+    box-shadow: -1px -1px -1px - 1px aquamarine;
+}
+.secondKey {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1px;
+    font-size: smaller;
+}
+.wrapperRu>div:nth-child(14) {
+    width: 100px;
+}
+.wrapperRu>div:nth-child(28) {
+    width: 80px;
+}
+.wrapperRu>div:nth-child(29) {
+    width: 100px;
+}
+.wrapperRu>div:nth-child(15) {
+    width: 70px;
+}
+.wrapperRu>div:nth-child(42) {
+    width: 70px;
+}
+.wrapperRu>div:nth-child(55) {
+    width: 70px;
+}
+.wrapperRu>div:nth-child(59) {
+    width: 350px;
+}
+.wrapperRu>div:nth-child(56) {
+    margin-left: 15px;
+}
+.wrapperRu>div:nth-child(62) {
+    margin-left: 14px;
+}
+.textArea {
+ height:50px;
+}
+.activeKey{
+    border:1px solid orange;
+    border-radius: 25%;
+    background-color: rgb(252, 113, 63);
+    box-shadow:none;
+}
