@@ -1,4 +1,5 @@
 .wrapper {
+    
     display: flex;
     border: 2px solid rgb(238, 144, 37);
     flex-wrap: wrap;
@@ -10,8 +11,27 @@
     padding-top: 25px;
     padding-left: 15px;
     padding-right: 15px;
+
   
 }
+/* .wrapper1 {
+    position: absolute;
+    display: flex;
+    border: 2px solid rgb(238, 144, 37);
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 900px;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 6%;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: none;
+    z-index: -1;
+
+  
+} */
 .wrapperRu {
     display: flex; 
     flex-wrap: wrap;

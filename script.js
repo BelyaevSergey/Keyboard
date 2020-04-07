@@ -24,10 +24,10 @@ let recheckKeyboards =true;
 
                                 //Создание первой клавитатуры 
 
-// сочетание заданных кнопок будет менять вид клавиатуры , а вывод и так изменится по идее 
 
 
-if (recheckKeyboards){   //если этот иф не сработает, то переключать клавы слоями(одна на одном другая на другом ) 
+
+if (recheckKeyboards){   
 
 let wrapper = document.createElement('div');
 wrapper.className='wrapper';
@@ -64,10 +64,6 @@ numberAltKeyRu.forEach(function(index){
 document.body.querySelectorAll('.secondKey')[13].innerHTML='[';
 document.body.querySelectorAll('.secondKey')[14].innerHTML='?';
 
-   //когда будет время переделать, ошибка в том что я значения массива подставляю в качестве индекса и два последних значения выдают андейфайнд
-
-//спецзнаки еще отработать 
-
 document.addEventListener('keydown',function(event){
     if(event.code=='cmd'&& event.code=='Space'){
         if(recheckKeyboards){
@@ -77,8 +73,7 @@ document.addEventListener('keydown',function(event){
             recheckKeyboards=true;
         }
     }
-    // let userLang = window.navigator.language; 
-    // console.log(userLang); 
+   
     if(event.key=='Backspace'){
         let newText= document.querySelector('.textArea').value;
         newText=newText.slice(0,(newText.length-1));
@@ -181,7 +176,7 @@ document.querySelectorAll('.key').forEach(function(key){
 });
 
 }
-   //                Вторая клавиатура // ниже написать функцию для переключателя, чтобы он реагировал на смену языка (лучше найти в доме состояние языка )
+   //                Вторая клавиатура // 
 else {
     let wrapper = document.createElement('div');
     wrapper.className='wrapper';
@@ -330,13 +325,3 @@ else {
     });
     
     }
-
-   
-  
-// получить данные из дома какой язык клавитуры используется и в зависмости от него включать нужную 
-
-// Нажатие стрелок вниз-вверх-влево-вправо либо выводят соответствующую стрелочку в инпут, либо реализуют навигацию по инпуту, нажатие на enter должно осуществлять перевод каретки, tab создает горизонтальный отступ, при нажатии остальных функциональных клавиш в инпут символы не выводятся, backspace удаляет символ стоящий перед курсором, del удаляет символ стоящий после курсора.
-//проще наверное при каждом нажатии делать фокус на форме и тогда автоматом будет все срабатывать 
-
-
-//отследить в консоли ивент нажатия стрелки и там должно быть видно свойство положения его 
